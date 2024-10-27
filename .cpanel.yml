@@ -1,5 +1,5 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home3/brakezap/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp -R scripts $DEPLOYPATH
+    - export DEPLOYPATH=/home3/brakezap/potato_server/
+    - /bin/cp public/server.js $DEPLOYPATH
+    - /bin/cp package.json $DEPLOYPATH
