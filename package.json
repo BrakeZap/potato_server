@@ -2,10 +2,13 @@
   "name": "potato_server",
   "version": "1.0.0",
   "description": "Potato Webserver",
-  "main": "public/server.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "BrakeZap",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
 }
