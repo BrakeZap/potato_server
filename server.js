@@ -6,6 +6,12 @@ wss.on('connection', function connection(ws) {
   ws.on('error', console.error)
 
   ws.on('message', function message(data) {
-    ws.send(data)
+    if (data == 'potato') {
+      wss.clients.forEach((conn) => {
+        if (conn != wss && conn.readyState == conn.OPEN)
+          conn.send("fetch")
+      })
+    }
   })
+
 })
